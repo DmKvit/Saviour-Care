@@ -2,7 +2,6 @@ const path = require('path');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackPartialsPlugin = require("html-webpack-partials-plugin");
 const MiniCssExractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
@@ -75,9 +74,6 @@ module.exports = (env, args) => {
             new HtmlWebpackPlugin({
                 template: './src/template.html'
             }),
-            new HtmlWebpackPartialsPlugin({
-                path: path.join(__dirname, './src/comp')
-              }),
             new MiniCssExractPlugin({
                 filename: './css/bundle.min.[fullhash].css'
             }),
