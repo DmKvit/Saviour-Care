@@ -1,0 +1,65 @@
+/* --------------------------------- Saviour ---------------------------------------- */
+
+.saviour {
+    position: relative;
+
+    // .saviour__container
+
+    &__container {
+        padding: 140px 0 200px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    // .saviour__content
+
+    &__content {
+        max-width: 620px;
+    }
+
+    // .saviour__title
+
+    &__title {
+        padding: 0 0 27px 0;
+        color: #3C567B;
+        font-size: 48px;
+        font-weight: $fontWeightBold;
+        line-height: 116.666667%; /* 56/48 */
+    }
+
+    // .saviour__text
+
+    &__text {
+        padding: 0 0 96px 0;
+        max-width: 525px;
+        color: #93C1F9;
+        font-size: 19px;
+        line-height: 142.105263%; /* 27/19 */
+        letter-spacing: 0.4px;
+    }
+
+    // .saviour__button
+
+    &__button {
+        padding: 20px 32px;
+        color: #ffffff;
+        background-color: $buttonColor;
+        line-height: 1;
+        transition: all 0.75s ease 0s;
+    }
+
+    &__button:hover, :focus, :active {
+        color: $buttonColor;
+        background-color: #ffffff;
+    }
+
+    // .saviour__image
+
+    &__image {
+        max-width: 577px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
