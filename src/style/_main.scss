@@ -45,10 +45,11 @@
         color: #ffffff;
         background-color: $buttonColor;
         line-height: 1;
-        transition: all 0.75s ease 0s;
+        transition: color 0.75s ease 0s,
+                    background-color 0.75s ease 0s;
     }
 
-    &__button:hover, :focus, :active {
+    &__button:hover{
         color: $buttonColor;
         background-color: #ffffff;
     }
@@ -217,5 +218,127 @@
     &__image {
     }
 }
-.btn {
+
+/* ---------------------- Find ---------------------- */
+
+.find {
+    padding: 220px 10px 230px 10px;
+    background-color: #F3FBFF;
+
+    // .find__container
+
+    &__container {
+    }
+
+    // .find__row
+
+    &__row {
+        margin: 0 0 230px 0;
+        display: flex;
+        padding: 0 40px;
+        justify-content: space-between;
+    }
+
+    // .find__image
+
+    &__image {
+    }
+
+    // .find__content
+
+    &__content {
+        max-width: 380px;
+    }
+
+    // .find__title
+
+    &__title {
+        margin: 0 0 30px 0;
+    }
+
+    // .find__text
+
+    &__text {
+        margin: 0 0 80px 0;
+    }
+
+    // .find__button
+
+    &__button {
+        padding: 0 44px;
+        background-color: inherit;
+    }
+
+    // .find__row-form
+
+    &__row-form {
+        padding: 80px 0;
+        background: $gradientColor;
+        text-align: center;
+        border-radius: 24px;
+    }
+
+    // .find__sub-title
+
+    &__sub-title {
+        margin: 0 0 90px 0;
+        color: #ffffff;
+    }
+
+    // .find__form
+
+    &__form {
+        margin: auto;
+        width: 508px;
+    }
+
+    // .find__box
+
+    &__box {
+        position: relative;
+        margin: 0 0 100px 0;
+    }
+    
+    // .find__input
+    
+    &__input {
+        width: 100%;
+        font-size: 24px;
+        line-height: 158.333333%; /* 38/24 */
+        color: #ffffff;
+        background-color: inherit;
+        border-bottom: 2px solid #ffffff;
+        outline: none;
+        transition: all 0.75s ease 0s;
+    }
+    
+    // .find__label
+
+    &__label {
+        position: absolute;
+        top: -15px;
+        left: 15px;
+        font-size: 24px;
+        font-weight: $fontWeightBold;
+        line-height: 158.333333%; /* 38/24 */
+        pointer-events: none;
+        color: #ffffff;
+        transition: all 0.75s ease 0s;
+    }
+    
+    &__input:focus + &__label, &__input:valid + &__label {
+        top: -30px;
+        left: 0;
+        font-size: 20px;
+        transition: all 0.75s ease 0s;
+    }
+
+    // .find__button-form
+
+    &__button-form {
+        width: 100%;
+        background-color: inherit;
+        color: #ffffff;
+        border-color: #ffffff;
+    }
 }
